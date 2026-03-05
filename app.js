@@ -68,7 +68,12 @@ function addRow(contact) {
     addressCell.setAttribute('data-label', "Address");
     addressCell.innerHTML = contact.address;
 
+    var nameCell = row.insertCell();
+    nameCell.setAttribute('data-label', "Email");
+    nameCell.innerHTML = contact.email;
+
     var mobileCell = row.insertCell();
     mobileCell.setAttribute('data-label', "Mobile");
     mobileCell.innerHTML = contact.phone.mobile;
 }
+
